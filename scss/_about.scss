@@ -1,0 +1,28 @@
+.about {
+  margin-bottom: 2vh;
+
+  &__title {
+    margin-bottom: 1vh;
+
+    @media screen and (max-width: 695px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    max-width: 1090px;
+    font-family: 'Roboto Regular';
+    font-size: clamp(0.875rem, 0.529rem + 0.601vw, 1.25rem);
+    font-weight: 400;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    text-indent: 22px;
+    letter-spacing: 2px;
+    color: #FFF;
+
+    @media screen and (max-width: 992px) {
+      max-width: 560px;
+      letter-spacing: 1px;
+    }
+  }
+}

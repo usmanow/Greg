@@ -1,0 +1,123 @@
+.feedback {
+  &__title {
+    margin-bottom: 1vh;
+    
+    @media screen and (max-width: 695px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 596px;
+
+    @media screen and (max-width: 695px) {
+      justify-content: center;
+    }
+
+    &-field {
+      padding: 0 14px;
+      width: 48%;
+      height: 48px;
+      font-family: 'Roboto Regular';
+      font-size: 14px;
+      font-weight: 400;
+      font-variant: all-small-caps;
+      letter-spacing: 2px;
+      color: #000;
+      background-color: #FFF;
+
+      @media screen and (max-width: 695px) {
+        width: 100%;
+      }
+
+      &::placeholder {
+        font-family: 'Roboto Regular';
+        font-size: 14px;
+        font-weight: 400;
+        font-variant: all-small-caps;
+        letter-spacing: 2px;
+        color: #000;
+        transition: color 0.2s ease-in;
+      }
+    }
+
+    &-message {
+      padding: 31px 13px;
+      width: 100%;
+      height: 108px;
+      font-family: 'Roboto Regular';
+      font-size: clamp(0.875rem, 0.777rem + 0.29vw, 1.125rem);
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #000;
+      background-color: #FFF;
+
+      @media screen and (max-width: 992px) {
+        padding: 18px 12px;
+        width: calc(100% - 122px);
+        height: 68px;
+      }
+
+      @media screen and (max-width: 695px) {
+        width: 100%;
+      }
+
+      &::placeholder {
+        font-family: 'Roboto Regular';
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        color: #000;
+        transition: color 0.2s ease-in;
+      }
+    }
+
+    &-field:focus::placeholder, &-message:focus::placeholder {
+      color: transparent;
+    }
+
+    &-submit {
+      padding: 13px 24px;
+      font-family: 'Roboto Regular';
+      font-size: 18px;
+      font-weight: 400;
+      font-variant: all-small-caps;
+      letter-spacing: 2px;
+      color: #FFF;
+      border: 2px solid #FFF;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        border: 2px solid #6AECF8;
+        background: #4FB5C0;
+        color: #000;
+      }
+
+      @media screen and (max-width: 992px) {
+        padding: 0;
+        width: 110px;
+        height: 68px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-height: 695px) {
+        padding: 0;
+        width: 110px;
+        height: 68px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 695px) {
+        padding: 13px 24px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
